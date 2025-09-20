@@ -1,0 +1,189 @@
+/* Footer.css */
+
+.footer {
+  background-color: #ffffff;
+  padding: 60px 0 0 0;
+  border-top: 1px solid #e5e7eb;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr auto;
+  gap: 60px;
+  align-items: start;
+}
+
+/* Brand Section */
+.brand-section {
+  max-width: 300px;
+}
+
+.brand-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 16px;
+}
+
+.brand-description {
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+.payment-methods {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.payment-icon {
+  background-color: #f3f4f6;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #374151;
+  border: 1px solid #e5e7eb;
+}
+
+/* Footer Sections */
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: #6b7280;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #1f2937;
+}
+
+/* Social Section */
+.social-section {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-icons {
+  display: flex;
+  gap: 8px;
+}
+
+.social-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #6b7280;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: 1px solid #e5e7eb;
+}
+
+.social-icon:hover {
+  background-color: #e5e7eb;
+  color: #1f2937;
+}
+
+/* Copyright */
+.copyright {
+  margin-top: 40px;
+  padding: 20px 0;
+  border-top: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.copyright p {
+  color: #9ca3af;
+  font-size: 12px;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  
+  .social-section {
+    justify-content: flex-start;
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 0 0 0;
+  }
+  
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0 15px;
+  }
+  
+  .brand-section {
+    max-width: 100%;
+  }
+  
+  .social-section {
+    grid-column: span 1;
+    justify-content: center;
+  }
+  
+  .payment-methods {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    gap: 25px;
+  }
+  
+  .brand-name {
+    font-size: 20px;
+  }
+  
+  .social-icons {
+    justify-content: center;
+  }
+  
+  .payment-methods {
+    justify-content: center;
+  }
+}
